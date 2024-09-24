@@ -16,3 +16,4 @@ trigger AccountTrigger on Account (before update, after update) {
 
 
 //AccountTriggerHandler
+public class AccountTriggerHandler { 
