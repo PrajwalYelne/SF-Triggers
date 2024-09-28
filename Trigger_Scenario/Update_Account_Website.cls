@@ -20,3 +20,5 @@ public class AccountTriggerHandler {
      public static void handleAfterUpdateActivities(List<Account> newRecords, Map<Id,Account> oldMap){ 
 
         Map<Id,String> accToWebsiteMap = new Map<Id,String>(); 
+
+        for (Account acc : 
