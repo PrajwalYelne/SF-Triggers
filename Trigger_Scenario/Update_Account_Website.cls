@@ -21,4 +21,4 @@ public class AccountTriggerHandler {
 
         Map<Id,String> accToWebsiteMap = new Map<Id,String>(); 
 
-        for (Account acc : 
+        for (Account acc : newRecords){ 
