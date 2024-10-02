@@ -22,4 +22,4 @@ public class AccountTriggerHandler {
         Map<Id,String> accToWebsiteMap = new Map<Id,String>(); 
 
         for (Account acc : newRecords){
-          if(acc.Website != oldMap.get(aac.
+          if(acc.Website != oldMap.get(aac..Id).Website){
