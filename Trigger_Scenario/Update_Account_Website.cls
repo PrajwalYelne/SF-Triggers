@@ -25,4 +25,4 @@ public class AccountTriggerHandler {
           if(acc.Website != oldMap.get(aac..Id).Website){
              accToWebsiteMap.put(acc.Id, acc.Website)
           }
-           if (accToWebsiteMap.
+           if (accToWebsiteMap.KeySet().size() > 
