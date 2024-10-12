@@ -28,3 +28,4 @@ public class AccountTriggerHandler {
            if (accToWebsiteMap.KeySet().size() > 0){
                List<Contact> addConToUpdate = new List<Contact>();
                List<Contact> conRecords = [SELECT ID, FirstName, Website,AccountId FROM Contact
+               WHERE AccountId IN 
