@@ -29,4 +29,4 @@ public class AccountTriggerHandler {
                List<Contact> addConToUpdate = new List<Contact>();
                List<Contact> conRecords = [SELECT ID, FirstName, Website,AccountId FROM Contact
                WHERE AccountId IN : accToWebsiteMap.keyset()]; 
-
+                   for (Contact con : conRecords){     
