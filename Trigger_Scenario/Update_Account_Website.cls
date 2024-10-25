@@ -30,4 +30,4 @@ public class AccountTriggerHandler {
                List<Contact> conRecords = [SELECT ID, FirstName, Website,AccountId FROM Contact
                WHERE AccountId IN : accToWebsiteMap.keyset()]; 
                    for (Contact con : conRecords){
-                      con.Website = accToWebsiteMap.get(co
+                      con.Website = accToWebsiteMap.get(con.AccountId);
