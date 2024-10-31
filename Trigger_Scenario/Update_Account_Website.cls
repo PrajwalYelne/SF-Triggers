@@ -32,5 +32,5 @@ public class AccountTriggerHandler {
                    for (Contact con : conRecords){
                       con.Website = accToWebsiteMap.get(con.AccountId);
                      }
-                     if(addConToUpdate.si 
+                     if(addConToUpdate.size() > 0){
                     
