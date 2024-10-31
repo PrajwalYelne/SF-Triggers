@@ -34,3 +34,4 @@ public class AccountTriggerHandler {
                      }
                      if(addConToUpdate.size() > 0){
                         update addConToUpdate;
+                     }
