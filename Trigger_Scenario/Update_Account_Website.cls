@@ -14,26 +14,50 @@ trigger AccountTrigger on Account (before update, after update) {
 
 } 
 
+ 
 
-//AccountTriggerHandler
+AccountTriggerHandler 
+
 public class AccountTriggerHandler { 
-     public static void handleAfterUpdateActivities(List<Account> newRecords, Map<Id,Account> oldMap){ 
+
+  
+
+    public static void handleAfterUpdateActivities(List<Account> newRecords, Map<Id,Account> oldMap){ 
 
         Map<Id,String> accToWebsiteMap = new Map<Id,String>(); 
 
-        for (Account acc : newRecords){
-          if(acc.Website != oldMap.get(aac..Id).Website){
-             accToWebsiteMap.put(acc.Id, acc.Website)
-          }
-           if (accToWebsiteMap.KeySet().size() > 0){
-               List<Contact> addConToUpdate = new List<Contact>();
-               List<Contact> conRecords = [SELECT ID, FirstName, Website,AccountId FROM Contact
-               WHERE AccountId IN : accToWebsiteMap.keyset()]; 
-                   for (Contact con : conRecords){
-                      con.Website = accToWebsiteMap.get(con.AccountId);
-                     }
-                     if(addConToUpdate.size() > 0){
-                        update addConToUpdate;
-                     }
-                   } 
-                }
+         
+
+        for (Account acc : newRecords){ 
+
+            if(acc.Website != oldMap.get(aac.Id).Website){ 
+
+                accToWebsiteMap.put(acc.Id, acc.Website) 
+
+            } 
+
+        } 
+
+        if (accToWebsiteMap.KeySet().size() > 0){ 
+
+            List<Contact> addConToUpdate = new List<Contact>(); 
+
+            List<Contact> conRecords = [SELECT ID, FirstName, Website,AccountId FROM Contact WHERE AccountId IN : accToWebsiteMap.keyset()]; 
+
+            for (Contact con : conRecords){ 
+
+                con.Website = accToWebsiteMap.get(con.AccountId); 
+
+            } 
+
+            if(addConToUpdate.size() > 0){ 
+
+                update addConToUpdate; 
+
+            } 
+
+        } 
+
+    } 
+
+} 
