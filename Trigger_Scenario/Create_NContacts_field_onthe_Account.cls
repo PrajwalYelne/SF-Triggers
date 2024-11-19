@@ -2,4 +2,4 @@
 
 AccountTrigger 
  
-trigger AccountTrigger on Account (After 
+trigger AccountTrigger on Account (After update, after insert) {
