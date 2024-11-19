@@ -2,4 +2,4 @@
 
 AccountTrigger 
  
-trigger AccountTrigger on
+trigger AccountTrigger on Account (After 
