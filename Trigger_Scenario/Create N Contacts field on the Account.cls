@@ -2,3 +2,4 @@
 
 AccountTrigger 
  
+trigger AccountTrigger on
