@@ -2,7 +2,7 @@
 
 AccountTrigger 
  
-trigger AccountTrigger on Account (After update, after insert) {
+trigger AccountTrigger on Account (After update, After insert) {
 
  if (Trigger.isAfter && Trigger.isUpdate){
  AccountTriggerHandler.handlerAfterInsertActivities(Trigger.New,Trigger.oldMap);
@@ -13,3 +13,4 @@ trigger AccountTrigger on Account (After update, after insert) {
 AccountTriggerHandler  
 public class AccountTriggerHandler{
 
+public static void handlerAfterInsertActivities
