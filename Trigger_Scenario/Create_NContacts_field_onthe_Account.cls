@@ -13,4 +13,4 @@ trigger AccountTrigger on Account (After update, After insert) {
 AccountTriggerHandler  
 public class AccountTriggerHandler{
 
-public static void handlerAfterInsertActivities
+public static void handlerAfterInsertActivities(List<Account> 
