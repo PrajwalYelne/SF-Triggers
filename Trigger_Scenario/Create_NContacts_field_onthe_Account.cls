@@ -8,3 +8,8 @@ trigger AccountTrigger on Account (After update, after insert) {
  AccountTriggerHandler.handlerAfterInsertActivities(Trigger.New,Trigger.oldMap);
  }
 }
+
+
+AccountTriggerHandler  
+public class AccountTriggerHandler{
+
