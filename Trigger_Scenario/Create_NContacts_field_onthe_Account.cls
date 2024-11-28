@@ -15,3 +15,4 @@ public class AccountTriggerHandler{
 
 public static void handlerAfterInsertActivities(List<Account> newRecords){
   List<Contact> conList = new List<Contact>();
+for(Account acc:
