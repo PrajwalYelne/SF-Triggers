@@ -17,3 +17,4 @@ public static void handlerAfterInsertActivities(List<Account> newRecords){
   List<Contact> conList = new List<Contact>();
 for(Account acc: newRecords){
  if(acc.CreateNContact != Null){
+  for(Integer i = 0; i < acc.
