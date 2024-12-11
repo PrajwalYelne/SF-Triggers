@@ -18,4 +18,4 @@ public static void handlerAfterInsertActivities(List<Account> newRecords){
 for(Account acc: newRecords){
  if(acc.CreateNContact != Null){
   for(Integer i = 0; i < acc.CreanteNContact; i++){
-   Contact con = 
+   Contact con = new Contact();
