@@ -20,4 +20,4 @@ for(Account acc: newRecords){
   for(Integer i = 0; i < acc.CreanteNContact; i++){
    Contact con = new Contact();
    con.LastName = acc.Name + I;
-   con.AccountId =
+   con.AccountId = acc.Id;
