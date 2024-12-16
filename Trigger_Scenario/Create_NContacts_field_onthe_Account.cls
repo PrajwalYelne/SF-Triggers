@@ -21,4 +21,4 @@ for(Account acc: newRecords){
    Contact con = new Contact();
    con.LastName = acc.Name + I;
    con.AccountId = acc.Id;
-   conList.
+   conList.add(con);
