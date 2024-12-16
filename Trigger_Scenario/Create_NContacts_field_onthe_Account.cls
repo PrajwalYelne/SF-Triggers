@@ -22,3 +22,4 @@ for(Account acc: newRecords){
    con.LastName = acc.Name + I;
    con.AccountId = acc.Id;
    conList.add(con);
+  }
