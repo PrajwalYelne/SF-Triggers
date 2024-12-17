@@ -25,4 +25,5 @@ for(Account acc: newRecords){
   }
  }   
 } 
-if (!conList.is
+if (!conList.isEmpty(){
+
