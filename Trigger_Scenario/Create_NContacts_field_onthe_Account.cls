@@ -23,3 +23,5 @@ for(Account acc: newRecords){
    con.AccountId = acc.Id;
    conList.add(con);
   }
+ }   
+} 
