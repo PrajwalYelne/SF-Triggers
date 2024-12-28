@@ -11,22 +11,25 @@ trigger AccountTrigger on Account (After update, after insert) {
 
 
 AccountTriggerHandler  
-public class AccountTriggerHandler{
+public class AccountTriggerHandler { 
 
-public static void handlerAfterInsertActivities(List<Account> newRecords){
-  List<Contact> conList = new List<Contact>();
-for(Account acc: newRecords){
- if(acc.CreateNContact != Null){
-  for(Integer i = 0; i < acc.CreanteNContact; i++){
-   Contact con = new Contact();
-   con.LastName = acc.Name + I;
-   con.AccountId = acc.Id;
-   conList.add(con);
-  }
- }   
+public static void handleAfterInsertActivities(List<Account> newRecords){ 
+    	List<Contact> conList = new List<Contact>(); 
+        for(Account acc : newRecords){ 
+            if(acc.CreateNContact != Null){ 
+                for(Integer i = 0; i < acc.CreateNContact; i++){ 
+                Contact con = new Contact(); 
+                con.LastName = acc.Name + i; 
+                con.AccountId = acc.Id; 
+                conList.add(con); 
+
+             } 
+           }   
+        } 
+
+        if(!conList.isEmpty()){ 
+            insert conList; 
+
+        } 
+    } 
 } 
-if (!conList.isEmpty(){
-   insert conList;
-  }
- }
-}
