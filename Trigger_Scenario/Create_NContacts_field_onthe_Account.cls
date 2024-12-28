@@ -22,14 +22,12 @@ public static void handleAfterInsertActivities(List<Account> newRecords){
                 con.LastName = acc.Name + i; 
                 con.AccountId = acc.Id; 
                 conList.add(con); 
-
              } 
            }   
         } 
 
         if(!conList.isEmpty()){ 
             insert conList; 
-
         } 
     } 
 } 
