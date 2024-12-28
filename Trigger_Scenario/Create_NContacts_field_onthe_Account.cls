@@ -27,4 +27,6 @@ for(Account acc: newRecords){
 } 
 if (!conList.isEmpty(){
    insert conList;
-
+  }
+ }
+}
