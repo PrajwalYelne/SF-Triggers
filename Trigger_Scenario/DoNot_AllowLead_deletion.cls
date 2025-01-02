@@ -4,3 +4,4 @@
 trigger LeadTrigger on Lead (before delete) {
 
   if(Trigger.isDelete && Trigger.isBefore){
+    LeadTriggerHan
