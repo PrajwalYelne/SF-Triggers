@@ -7,3 +7,6 @@ trigger LeadTrigger on Lead (before delete) {
     LeadTriggerHandler.handleActivitiesBeforeDelete(Trigger.OLD);
   }
 }
+
+//LeadTriggerHandler 
+puclic class
