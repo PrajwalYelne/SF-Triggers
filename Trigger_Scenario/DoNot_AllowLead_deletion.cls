@@ -9,4 +9,4 @@ trigger LeadTrigger on Lead (before delete) {
 }
 
 //LeadTriggerHandler 
-puclic class
+puclic class LeadTriggerHandler {
