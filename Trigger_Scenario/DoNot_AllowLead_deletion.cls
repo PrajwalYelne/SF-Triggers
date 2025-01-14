@@ -10,4 +10,5 @@ trigger LeadTrigger on Lead (before delete) {
 
 //LeadTriggerHandler 
 public class LeadTriggerHandler {
- public static void handleActiviesBeforeDelete(List<Lead> leadRecords)
+ public static void handleActiviesBeforeDelete(List<Lead> leadRecords){
+  for(Lead leadRec:
