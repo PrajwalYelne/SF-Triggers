@@ -9,4 +9,5 @@ trigger LeadTrigger on Lead (before delete) {
 }
 
 //LeadTriggerHandler 
-puclic class LeadTriggerHandler {
+public class LeadTriggerHandler {
+ public static void handleActiviesBefore
