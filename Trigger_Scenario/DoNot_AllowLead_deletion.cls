@@ -12,4 +12,4 @@ trigger LeadTrigger on Lead (before delete) {
 public class LeadTriggerHandler {
  public static void handleActiviesBeforeDelete(List<Lead> leadRecords){
   for(Lead leadRec:leadRecords){
-    if(leadRec.status=='Working Contacted'
+    if(leadRec.status=='Working Contacted'){
