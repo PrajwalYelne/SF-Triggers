@@ -13,4 +13,4 @@ public class LeadTriggerHandler {
  public static void handleActiviesBeforeDelete(List<Lead> leadRecords){
   for(Lead leadRec:leadRecords){
     if(leadRec.status=='Working Contacted'){
-       leadRec.addError('You Dont have permision
+       leadRec.addError('You Dont have permision to Delete this Records');
