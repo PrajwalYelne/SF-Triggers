@@ -16,3 +16,5 @@ public class LeadTriggerHandler {
        leadRec.addError('You Dont have permision to Delete this Records');
       } 
    } 
+  } 
+} 
