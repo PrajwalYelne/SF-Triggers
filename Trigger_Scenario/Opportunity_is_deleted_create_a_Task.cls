@@ -2,5 +2,5 @@
 
 trigger OpportunityTrigger on Opportunity (before insert, after delete) { 
   if(Trigger.isDelete && Trigger.isAfter){
-      OpportunityTriggerHandl
+      OpportunityTriggerHandler.handleAc
 
