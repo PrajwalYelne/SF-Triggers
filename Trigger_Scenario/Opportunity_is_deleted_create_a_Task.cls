@@ -9,4 +9,5 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete) {
 
 //OpportunityTriggerHandler
 public class OpportunityTriggerHandler { 
-  public static void handleActivitiesAfterDelete(List<Opportunity> old
+  public static void handleActivitiesAfterDelete(List<Opportunity> oldRecords){
+    set<ID>
