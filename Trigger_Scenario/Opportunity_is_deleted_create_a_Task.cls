@@ -9,4 +9,4 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete) {
 
 //OpportunityTriggerHandler
 public class OpportunityTriggerHandler { 
-  public static void handleActivitiesAfterDelete(List
+  public static void handleActivitiesAfterDelete(List<Opportunity> old
