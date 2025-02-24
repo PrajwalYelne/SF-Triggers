@@ -11,4 +11,4 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete) {
 public class OpportunityTriggerHandler { 
   public static void handleActivitiesAfterDelete(List<Opportunity> oldRecords){
     Set<Id> accountIds  new Set<Id>();
-    Map<Id, Id> Opp
+    Map<Id, Id> OppvsAccountMap =
