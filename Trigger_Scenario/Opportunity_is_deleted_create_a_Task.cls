@@ -12,4 +12,4 @@ public class OpportunityTriggerHandler {
   public static void handleActivitiesAfterDelete(List<Opportunity> oldRecords){
     Set<Id> accountIds  new Set<Id>();
     Map<Id, Id> OppvsAccountMap = new Map<Id, Id>();
-    Map<Id,Id> accIdvsOwnerIdMap = 
+    Map<Id,Id> accIdvsOwnerIdMap = new Map<Id, Id>(); 
