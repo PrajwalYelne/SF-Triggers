@@ -15,4 +15,4 @@ public class OpportunityTriggerHandler {
     Map<Id,Id> accIdvsOwnerIdMap = new Map<Id, Id>();
     for(opportunity opp : oldRecords){
       accountIds.add(opp.AccountId);
-      oppvsAccountMap.put(opp.Id,
+      oppvsAccountMap.put(opp.Id, opp.AccountId
