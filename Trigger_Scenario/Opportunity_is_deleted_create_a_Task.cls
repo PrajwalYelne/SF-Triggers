@@ -16,3 +16,5 @@ public class OpportunityTriggerHandler {
     for(opportunity opp : oldRecords){
       accountIds.add(opp.AccountId);
       oppvsAccountMap.put(opp.Id, opp.AccountId); 
+    }
+  List<Account
