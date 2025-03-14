@@ -17,4 +17,4 @@ public class OpportunityTriggerHandler {
       accountIds.add(opp.AccountId);
       oppvsAccountMap.put(opp.Id, opp.AccountId); 
     }
-  List<Account> AccountRecords = [ Select
+  List<Account> AccountRecords = [ Select Id, OwnerId From Account 
