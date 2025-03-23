@@ -20,3 +20,4 @@ public class OpportunityTriggerHandler {
   List<Account> AccountRecords = [SELECT Id, OwnerId FROM Account WHERE Id IN:accountIds];
   for(Account acc: accountRecords){
     accIdvsOwnerIdMap.put(acc.Id, acc.OwnerId);
+  }
