@@ -22,4 +22,4 @@ public class OpportunityTriggerHandler {
     accIdvsOwnerIdMap.put(acc.Id, acc.OwnerId);
   }
 
-  List<Task>taskRecList =
+  List<Task>taskRecList = new List<Task
