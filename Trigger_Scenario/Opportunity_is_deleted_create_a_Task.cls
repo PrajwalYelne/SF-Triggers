@@ -21,3 +21,5 @@ public class OpportunityTriggerHandler {
   for(Account acc: accountRecords){
     accIdvsOwnerIdMap.put(acc.Id, acc.OwnerId);
   }
+
+  List<Task>taskRecList =
