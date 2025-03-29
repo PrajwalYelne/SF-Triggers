@@ -23,4 +23,4 @@ public class OpportunityTriggerHandler {
   }
 
   List<Task>taskRecList = new List<Task>();
-  for(Opportunity oppRec:oldReco 
+  for(Opportunity oppRec : oldRecords){
