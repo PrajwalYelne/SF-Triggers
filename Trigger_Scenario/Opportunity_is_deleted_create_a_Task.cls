@@ -23,3 +23,4 @@ public class OpportunityTriggerHandler {
   }
 
   List<Task>taskRecList = new List<Task>();
+  for(Opportu
