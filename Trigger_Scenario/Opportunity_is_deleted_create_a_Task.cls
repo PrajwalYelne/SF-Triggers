@@ -25,4 +25,4 @@ public class OpportunityTriggerHandler {
   List<Task>taskRecList = new List<Task>();
   for(Opportunity oppRec : oldRecords){
     Task taskRec = new Task();
-    taskRec.Des
+    taskRec.Description =
