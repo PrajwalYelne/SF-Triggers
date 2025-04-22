@@ -27,4 +27,4 @@ public class OpportunityTriggerHandler {
     Task taskRec = new Task();
     taskRec.Description = 'New Task Created to investigate why opportunity was deleted';
     taskRec.Priority = 'High';
-    taskRec.O
+    taskRec.OwnerId
