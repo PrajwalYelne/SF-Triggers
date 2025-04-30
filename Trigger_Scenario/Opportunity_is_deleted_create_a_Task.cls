@@ -29,4 +29,4 @@ public class OpportunityTriggerHandler {
     taskRec.Priority = 'High';
     taskRec.OwnerId = accIdvsOwnerIdMap.get(oppvsAccountMap.get(oppRec.Id));
     taskRec.Status = 'Not Started';
-    task
+    taskRec.
