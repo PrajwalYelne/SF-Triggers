@@ -28,4 +28,5 @@ public class OpportunityTriggerHandler {
     taskRec.Description = 'New Task Created to investigate why opportunity was deleted';
     taskRec.Priority = 'High';
     taskRec.OwnerId = accIdvsOwnerIdMap.get(oppvsAccountMap.get(oppRec.Id));
-    taskRec.Status = 'Not Started'
+    taskRec.Status = 'Not Started';
+    task
