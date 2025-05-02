@@ -31,3 +31,5 @@ public class OpportunityTriggerHandler {
     taskRec.Status = 'Not Started';
     taskRecList.add(taskRec);
   }
+ }
+}
