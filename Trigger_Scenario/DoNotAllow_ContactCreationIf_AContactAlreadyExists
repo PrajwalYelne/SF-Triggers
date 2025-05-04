@@ -1,1 +1,1 @@
-DoNotAllow_ContactCreationIf_AContactAlreadyExists
+// Do not allow contact creation if a contact already exists with the same last name, email & phone 
