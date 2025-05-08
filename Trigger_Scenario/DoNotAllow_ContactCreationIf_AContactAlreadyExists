@@ -2,6 +2,6 @@
 
 trigger ContactTrigger on Contact (before insert){
   if(Trigger.isBefore && Trigger.isInsert){
-    ContactTriggerHandler.handleBeforeIncertActivities(Tri
+    ContactTriggerHandler.handleBeforeIncertActivities(Trigger.New);
   }
 }
