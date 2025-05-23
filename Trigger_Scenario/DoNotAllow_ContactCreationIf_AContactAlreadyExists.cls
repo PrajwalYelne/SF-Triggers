@@ -10,4 +10,4 @@ trigger ContactTrigger on Contact (before insert){
 
 public class ContactTriggerHandler{
 
-public static vo
+public static void handleBeforeIncert
