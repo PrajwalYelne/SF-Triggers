@@ -10,4 +10,6 @@ trigger ContactTrigger on Contact (before insert){
 
 public class ContactTriggerHandler{
 
-public static void handleBeforeIncertActivities(List<Contact> newRecords){}
+public static void handleBeforeIncertActivities(List<Contact> newRecords){
+
+}
