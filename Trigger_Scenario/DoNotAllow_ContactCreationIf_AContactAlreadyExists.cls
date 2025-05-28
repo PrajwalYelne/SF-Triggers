@@ -11,5 +11,5 @@ trigger ContactTrigger on Contact (before insert){
 public class ContactTriggerHandler{
 
 public static void handleBeforeIncertActivities(List<Contact> newRecords){
-  List<Contact> existingRecords = [SELECT Id, LastName,
+  List<Contact> existingRecords = [SELECT Id, LastName, Phone,
 }
