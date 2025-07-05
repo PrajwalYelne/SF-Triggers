@@ -14,6 +14,6 @@ public static void handleBeforeIncertActivities(List<Contact> newRecords){
   List<Contact> existingRecords = [SELECT Id, LastName, Phone, Email FROM Contact LIMIT 50000];
 
     for(Contact con: newRecords){
-      if(con.LastName==existingRecords.LastName && con.Phone==existingRecord.Phone && con.Email==existingRecords.Em)
+      if(con.LastName==existingRecords.LastName && con.Phone==existingRecord.Phone && con.Email==existingRecords.Email){}
     }
 }
