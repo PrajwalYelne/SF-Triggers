@@ -15,7 +15,7 @@ public static void handleBeforeIncertActivities(List<Contact> newRecords){
 
     for(Contact con: newRecords){
       if(con.LastName==existingRecords.LastName && con.Phone==existingRecord.Phone && con.Email==existingRecords.Email){
-            con.addError('Dup
+            con.addError('Duplicate Reco
       }
     }
 }
