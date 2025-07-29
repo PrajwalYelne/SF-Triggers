@@ -1,1 +1,1 @@
-//As soon as Opportunity is Closed Lost, 
+//As soon as Opportunity is Closed Lost, remove all Opportunity Team
