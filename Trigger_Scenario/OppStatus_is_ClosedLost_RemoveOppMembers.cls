@@ -1,3 +1,5 @@
 //As soon as Opportunity is Closed Lost, remove all Opportunity Team Members from the Opportunity 
 
-trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
+trigger OpportunityTrigger on Opportunity (before insert, after delete, after update){
+if(
+}
