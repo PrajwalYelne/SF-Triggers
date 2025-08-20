@@ -2,6 +2,6 @@
 
 trigger OpportunityTrigger on Opportunity (before insert, after delete, after update){
   if(Trigger.isUpdate && Trigger.isAfter){
-    OpportunityTriggerHan
+    OpportunityTriggerHandler.handleActiv
   }
 }
