@@ -6,4 +6,4 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
   }
 }
 
-public class OpportunityTrigg
+public class OpportunityTriggerHandler{
