@@ -5,3 +5,5 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
     OpportunityTriggerHandler.handleActivtiesAfterUpdate(Trigger.New);
   }
 }
+
+public class O
