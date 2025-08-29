@@ -7,3 +7,4 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
 }
 
 public class OpportunityTriggerHandler{
+ public stati
