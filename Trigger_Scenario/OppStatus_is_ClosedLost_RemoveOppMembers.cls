@@ -7,4 +7,4 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
 }
 
 public class OpportunityTriggerHandler{
- public static void handleActivitiesAfter
+ public static void handleActivitiesAfterUpdate(List
