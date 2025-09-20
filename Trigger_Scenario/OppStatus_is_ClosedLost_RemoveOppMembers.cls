@@ -8,4 +8,4 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
 
 public class OpportunityTriggerHandler{
  public static void handleActivitiesAfterUpdate(List<Opportunity> newRecords){
-    List<Id> listOfOppIds = new List<
+    List<Id> listOfOppIds = new List<Id>
