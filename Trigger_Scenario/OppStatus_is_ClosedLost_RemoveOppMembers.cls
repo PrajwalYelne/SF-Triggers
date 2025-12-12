@@ -10,4 +10,4 @@ public class OpportunityTriggerHandler{
  public static void handleActivitiesAfterUpdate(List<Opportunity> newRecords){
     List<Id> listOfOppIds = new List<Id>();
     List<OpportunityTeamMember> deleteMemberList = new List<OpportunityTeamMember>();
-   for(Opport
+   for(Opportunity opp:
