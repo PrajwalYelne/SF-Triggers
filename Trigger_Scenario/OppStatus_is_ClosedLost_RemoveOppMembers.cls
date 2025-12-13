@@ -11,4 +11,4 @@ public class OpportunityTriggerHandler{
     List<Id> listOfOppIds = new List<Id>();
     List<OpportunityTeamMember> deleteMemberList = new List<OpportunityTeamMember>();
    for(Opportunity opp: newRecords){
-     listOfOp
+     listOfOppIds
