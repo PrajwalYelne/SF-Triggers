@@ -12,3 +12,6 @@ public class OpportunityTriggerHandler{
     List<OpportunityTeamMember> deleteMemberList = new List<OpportunityTeamMember>();
    for(Opportunity opp: newRecords){
      listOfOppIds.add(opp.Id);
+    }
+
+ Li
