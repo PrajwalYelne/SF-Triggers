@@ -14,4 +14,4 @@ public class OpportunityTriggerHandler{
      listOfOppIds.add(opp.Id);
     }
 
- List <OpportunityTeamMember> teamMembers = [ Select Id, Opp
+ List <OpportunityTeamMember> teamMembers = [ Select Id, OpportunityId From O
