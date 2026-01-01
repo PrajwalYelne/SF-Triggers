@@ -15,4 +15,6 @@ public class OpportunityTriggerHandler{
     }
 
  List <OpportunityTeamMember> teamMembers = [ Select Id, OpportunityId From OpportunityTeamMember 
-                                              Where OpportunityId In: listOfOppIds
+                                              Where OpportunityId In: listOfOppIds];
+
+  for(
