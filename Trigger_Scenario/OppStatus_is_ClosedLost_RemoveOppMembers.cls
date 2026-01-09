@@ -18,4 +18,4 @@ public class OpportunityTriggerHandler{
                                               Where OpportunityId In: listOfOppIds];
 
   for(Oppoortunity opp: newRecords){
-    if(opp.StageName =)
+    if(opp.StageName == 'Cl)
