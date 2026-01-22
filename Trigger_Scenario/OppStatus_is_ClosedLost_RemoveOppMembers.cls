@@ -21,5 +21,5 @@ public class OpportunityTriggerHandler{
     if(opp.StageName == 'Close Lost'){
       for(OpportunityTeamMember teamMember : teamMembers ){
         if(teamMember.OpportunityId == opp.Id){
-          deleteMemberList.add(tea
+          deleteMemberList.add(teamMember
         }
