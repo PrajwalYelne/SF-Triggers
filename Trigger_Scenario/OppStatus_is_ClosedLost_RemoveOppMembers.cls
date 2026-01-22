@@ -20,4 +20,6 @@ public class OpportunityTriggerHandler{
   for(Oppoortunity opp: newRecords){
     if(opp.StageName == 'Close Lost'){
       for(OpportunityTeamMember teamMember : teamMembers ){
-        if(teamMember.OpportunityId == opp.Id
+        if(teamMember.OpportunityId == opp.Id){
+          d
+        }
