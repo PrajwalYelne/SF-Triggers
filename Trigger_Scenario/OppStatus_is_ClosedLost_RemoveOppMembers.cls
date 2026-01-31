@@ -22,4 +22,9 @@ public class OpportunityTriggerHandler{
       for(OpportunityTeamMember teamMember : teamMembers ){
         if(teamMember.OpportunityId == opp.Id){
           deleteMemberList.add(teamMember);
-        }
+        } 
+      } 
+    } 
+ } 
+
+if(
