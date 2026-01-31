@@ -27,4 +27,4 @@ public class OpportunityTriggerHandler{
     } 
  } 
 
-if(!delete
+if(!deleteMemberList.is
