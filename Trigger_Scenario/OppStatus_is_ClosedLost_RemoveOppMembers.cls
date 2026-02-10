@@ -28,4 +28,5 @@ public class OpportunityTriggerHandler{
  } 
 
 if(!deleteMemberList.isEmpty){
-    delete deleteMemberL
+    delete deleteMemberList;
+}
