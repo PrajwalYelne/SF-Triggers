@@ -6,30 +6,27 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
   }
 }
 
-public class OpportunityTriggerHandler{
- public static void handleActivitiesAfterUpdate(List<Opportunity> newRecords){
-    List<Id> listOfOppIds = new List<Id>();
-    List<OpportunityTeamMember> deleteMemberList = new List<OpportunityTeamMember>();
-   for(Opportunity opp: newRecords){
-     listOfOppIds.add(opp.Id);
+   public class OpportunityTriggerHandler {
+    public static void handleActivitiesAfterUpdate(List<Opportunity> newRecords){
+        List<Id> listofOppIds = new List<Id>();
+        List<OpportunityTeamMember> deleteMemberList = new List<OpportunityTeamMember>();
+        for(opportunity opp : newRecords){
+            listofOppIds.add(opp.Id);
+        }
+        List<OpportunityTeamMember> teamMembers = [SELECT id, OpportunityId FROM OpportunityTeamMember WHERE OpportunityId IN : listofOppIds]; 
+        
+        for(Opportunity opp : newRecords){
+            if(opp.StageName == 'Close Lost'){
+                for(OpportunityTeamMember teamMember : teamMembers){
+                    if(teamMember.OpportunityId == opp.Id){
+                        deleteMemberList.add(teamMember);
+                    }
+                }
+            }
+        }
+        
+        if(!deleteMemberList.isEmpty()){
+            delete deleteMemberList;
+        }
     }
-
- List <OpportunityTeamMember> teamMembers = [ Select Id, OpportunityId From OpportunityTeamMember 
-                                              Where OpportunityId In: listOfOppIds];
-
-  for(Oppoortunity opp: newRecords){
-    if(opp.StageName == 'Close Lost'){
-      for(OpportunityTeamMember teamMember : teamMembers ){
-        if(teamMember.OpportunityId == opp.Id){
-          deleteMemberList.add(teamMember);
-        } 
-      } 
-    } 
- } 
-
-if(!deleteMemberList.isEmpty){
-    delete deleteMemberList;
-      }
-   }
 }
-
