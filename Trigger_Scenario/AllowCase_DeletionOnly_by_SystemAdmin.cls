@@ -3,3 +3,5 @@
 trigger CaseTrigger on Case(before delete){
   CaseTriggerHandler.handleActivitiesBeforeDelete(Trigger.old);
 }
+
+public cla
