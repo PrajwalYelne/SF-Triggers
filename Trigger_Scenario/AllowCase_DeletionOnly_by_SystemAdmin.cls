@@ -5,5 +5,5 @@ trigger CaseTrigger on Case(before delete){
 }
 
 public class CaseTriggerHandler{
- public static void Cas
+ public static void Case
 }
