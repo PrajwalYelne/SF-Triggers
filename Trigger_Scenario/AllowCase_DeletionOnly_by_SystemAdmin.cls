@@ -4,4 +4,6 @@ trigger CaseTrigger on Case(before delete){
   CaseTriggerHandler.handleActivitiesBeforeDelete(Trigger.old);
 }
 
-public class CaseTriggerHandl
+public class CaseTriggerHandler{
+ publi
+}
