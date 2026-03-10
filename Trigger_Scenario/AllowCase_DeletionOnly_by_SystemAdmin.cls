@@ -5,5 +5,5 @@ trigger CaseTrigger on Case(before delete){
 }
 
 public class CaseTriggerHandler{
- publi
+ public static v
 }
