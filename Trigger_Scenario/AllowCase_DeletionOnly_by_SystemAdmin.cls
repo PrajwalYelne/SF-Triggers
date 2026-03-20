@@ -5,6 +5,6 @@ trigger CaseTrigger on Case(before delete){
 }
 
 public class CaseTriggerHandler{
- public static void handleAc
+ public static void handleActivitesB
 
 }
