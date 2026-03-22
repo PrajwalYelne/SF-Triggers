@@ -5,6 +5,8 @@ trigger CaseTrigger on Case(before delete){
 }
 
 public class CaseTriggerHandler{
- public static void handleActivitesBeforeDelete(List<C>){}
+ public static void handleActivitesBeforeDelete(List<Case> oldRecord){
+  
 
+ }
 }
