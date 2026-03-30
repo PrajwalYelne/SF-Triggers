@@ -7,6 +7,6 @@ trigger CaseTrigger on Case(before delete){
 public class CaseTriggerHandler{
  public static void handleActivitesBeforeDelete(List<Case> oldRecord){
   Id currentUserProfileId = UserInfo.getProfileId();
-  Id sysAdminPro
+  Id sysAdminProfileId =
  }
 }
