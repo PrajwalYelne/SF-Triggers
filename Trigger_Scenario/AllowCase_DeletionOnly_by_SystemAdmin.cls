@@ -8,4 +8,4 @@ public class CaseTriggerHandler{
  public static void handleActivitesBeforeDelete(List<Case> oldRecord){
   Id currentUserProfileId = UserInfo.getProfileId();
   Id sysAdminProfileId = [Select Id, Name From Profile Where Name = 'System Admin' Limit 1].Id;
-  for(Case 
+  for(Case c
