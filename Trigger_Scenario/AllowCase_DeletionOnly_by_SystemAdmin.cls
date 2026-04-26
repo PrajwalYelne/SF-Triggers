@@ -9,4 +9,4 @@ public class CaseTriggerHandler{
   Id currentUserProfileId = UserInfo.getProfileId();
   Id sysAdminProfileId = [Select Id, Name From Profile Where Name = 'System Admin' Limit 1].Id;
   for(Case caseRec : oldRecord){
-    if(sysAdminProfileId != cu
+    if(sysAdminProfileId != currentUserProfile
