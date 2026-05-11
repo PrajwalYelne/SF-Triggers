@@ -10,4 +10,4 @@ public class CaseTriggerHandler{
   Id sysAdminProfileId = [Select Id, Name From Profile Where Name = 'System Admin' Limit 1].Id;
   for(Case caseRec : oldRecord){
     if(sysAdminProfileId != currentUserProfileId){
-      caseRec.addError(''You dont have the
+      caseRec.addError(''You dont have the rights to detele this 
