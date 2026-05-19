@@ -11,4 +11,7 @@ public class CaseTriggerHandler{
   for(Case caseRec : oldRecord){
     if(sysAdminProfileId != currentUserProfileId){
       caseRec.add('You dont have the rights to detele this records');
+      }
+    }
+  }
 }
