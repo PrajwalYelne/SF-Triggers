@@ -4,3 +4,5 @@ trigger contactTrigger on contact (before insert, after insert){
    ContactTriggerHandler.handleAfterIncertActivities(Trigger.New, Trigger.oldMap);
   }
 }
+
+publ
