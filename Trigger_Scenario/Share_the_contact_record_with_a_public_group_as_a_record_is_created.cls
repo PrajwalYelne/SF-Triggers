@@ -3,3 +3,4 @@ trigger contactTrigger on contact (before insert, after insert){
   if(Trigger.isAfter && Trigger.isInsert){
    ContactTriggerHandler.handleAfterIncertActivities(Trigger.New, Trigger.oldMap);
   }
+}
