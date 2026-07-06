@@ -5,4 +5,4 @@ trigger contactTrigger on contact (before insert, after insert){
   }
 }
 
-public class 
+public class Conta
