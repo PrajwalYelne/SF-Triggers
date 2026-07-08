@@ -5,4 +5,5 @@ trigger contactTrigger on contact (before insert, after insert){
   }
 }
 
-public class ContactTrigger
+public class ContactTriggerHandler{
+  pub
