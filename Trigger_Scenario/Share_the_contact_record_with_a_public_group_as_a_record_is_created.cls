@@ -6,4 +6,4 @@ trigger contactTrigger on contact (before insert, after insert){
 }
 
 public class ContactTriggerHandler{
-  public static void handl
+  public static void  handleAfterI
