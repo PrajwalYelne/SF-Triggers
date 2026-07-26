@@ -8,4 +8,4 @@ trigger contactTrigger on contact (before insert, after insert){
 public class ContactTriggerHandler{
   public static void   handleAfterIncertActivities(List<Contact> newRecords){
     List<ContactShare> addRecordToList = new List<ContactShare>();
-Id conPublicGroup = [Select Id, Name From Group Where N
+Id conPublicGroup = [Select Id, Name From Group Where Name = '
