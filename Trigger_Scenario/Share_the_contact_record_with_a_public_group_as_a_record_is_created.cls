@@ -10,4 +10,4 @@ public class ContactTriggerHandler{
     List<ContactShare> addRecordToList = new List<ContactShare>();
 Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1].Id;
 
-  for(Cont
+  for(Contact Con
