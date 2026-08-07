@@ -11,4 +11,4 @@ public class ContactTriggerHandler{
 Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1].Id;
 
   for(Contact ConRec : newRecords){
-    ContactSh
+    ContactShare = new 
