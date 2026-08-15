@@ -12,4 +12,4 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
 
   for(Contact ConRec : newRecords){
     ContactShare conSh = new ContactShare();
-    conSh.C
+    conSh.ContactA
