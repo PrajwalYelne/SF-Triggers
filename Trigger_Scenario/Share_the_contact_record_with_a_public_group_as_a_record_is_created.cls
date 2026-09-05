@@ -14,4 +14,4 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
     ContactShare conSh = new ContactShare();
     conSh.ContactAccessLevel = 'Read/Write';
     conSh.ContactId =  conRec.Id;
-    conSh.
+    conSh.Row
