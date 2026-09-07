@@ -15,3 +15,4 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
     conSh.ContactAccessLevel = 'Read/Write';
     conSh.ContactId =  conRec.Id;
     conSh.RowCause = 'Manual';
+    conS
