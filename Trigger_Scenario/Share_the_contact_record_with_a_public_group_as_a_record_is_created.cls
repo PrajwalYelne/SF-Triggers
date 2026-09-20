@@ -16,4 +16,4 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
     conSh.ContactId =  conRec.Id;
     conSh.RowCause = 'Manual';
     conSh.UserOrGroupId = conPublicGroup;
-    addRecordToList.add(con.s
+    addRecordToList.add(conSh);
