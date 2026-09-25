@@ -20,4 +20,4 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
     }
   }
 
-  if(!addRecordToLis
+  if(!addRecordToList.isEm
