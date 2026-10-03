@@ -21,4 +21,4 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
   }
 
   if(!addRecordToList.isEmpty()){
-      insert addRecordT
+      insert addRecordToList
