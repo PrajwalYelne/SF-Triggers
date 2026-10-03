@@ -19,7 +19,7 @@ Id conPublicGroup = [Select Id, Name From Group Where Name = 'GroupName' Limit 1
     addRecordToList.add(conSh);
     }
   }
-
+ 
   If(!addRecordToList.isEmpty()){
         insert addRecordToList;
     }
