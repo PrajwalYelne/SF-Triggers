@@ -5,3 +5,5 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
     OpportunityTriggerHandler.addTeamMembers(Trigger.New, Trigger.OldMap;)
     }
 }
+
+public class
