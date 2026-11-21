@@ -7,6 +7,6 @@ trigger OpportunityTrigger on Opportunity (before insert, after delete, after up
 }
 
 public class OpportunityTriggerHandler{
-    public static void addTeamMembers(List<Opportunity> newRecords, Map<Id,Opportunity> oldM
+    public static void addTeamMembers(List<Opportunity> newRecords, Map<Id,Opportunity> oldMapRe
 
 }
